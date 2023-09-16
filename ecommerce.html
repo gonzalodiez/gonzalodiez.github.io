@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Portfolio - Data Professionals Survey</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="icon" type="image/png"
+		href="images/logo_2_zoom-removebg-preview-removebg-preview-removebg-preview.png" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<span class="symbol"><img src="images/logo.png" alt="" { transform: scale (0.5)} /></span><span
+						class="title">Gonzalo Diez</span>
+				</a>
+
+				<!-- Nav -->
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
+
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="index.html">Portfolio</a></li>
+				<li><a href="about.me.html">About me</a></li>
+				<li><a href="certificates.html">Certificates & CV</a></li>
+				<li><a href="blog.html">Blog</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<header>
+					<h1>E-Commerce Data Pipeline</h1>
+					The E-Commerce Data Pipeline project was a comprehensive data engineering and analysis effort aimed at extracting, transforming, and visualizing data from multiple sources to provide valuable insights for a leading Latam E-commerce platform. The project encompassed five main phases: Extract, Load, Transform, Visualize, and Data Orchestration with Apache Airflow. Each phase presented unique challenges that required creative solutions and technical expertise. Some of the challenges faced where:
+						<br>
+						<br>	
+					<blockquote>					
+						<ul>
+							<li><b>Data Extraction Complexity:</b> The project involved extracting data from various sources, including CSV files and a public API. Ensuring the accurate extraction of data while maintaining data integrity was a significant challenge. Proper validation and handling of data discrepancies were crucial.</li>
+							<li><b>Data Transformation:</b> The data transformation phase required creating complex SQL queries to derive meaningful insights. The challenge here was to optimize query performance and accuracy, especially when dealing with large datasets. Ensuring the queries met the project requirements and generating expected results was essential.</li>
+							<li><b>Data Visualization:</b> The project required creating informative visualizations to present insights effectively. The challenge was to choose the right visualizations to convey the data story clearly. Ensuring that the Jupyter notebook (EDA.ipynb) contained interactive and insightful visualizations added complexity.</li>
+							<li><b>Data Warehouse Choice:</b> While SQLite was chosen as the database engine for simplicity, dealing with larger datasets in a real-world scenario might require more scalable options like Snowflake. Decisions about data warehousing needed to be considered with future scalability in mind.</li>
+							<li><b>Airflow Integration:</b> Implementing data orchestration with Apache Airflow was a pivotal step. The challenge was to create a reliable and automated workflow that ensured data updates and report generation at regular intervals. Developing the Airflow DAG (elt_sprin1_dag.py) and ensuring its seamless integration with the project files was crucial.</li>
+							<li><b>Project Documentation:</b> Managing a project of this complexity required well-structured documentation. Ensuring that team members and stakeholders could easily understand the project structure, component roles, and dependencies was essential for smooth collaboration.</li>
+							<li><b>Testing with Pytest:</b> The project required robust testing using Pytest (tests/test_extract.py and tests/test_transform.py) to validate data extraction and transformation functions. Creating comprehensive test cases that covered various scenarios and edge cases was challenging but vital for ensuring data pipeline reliability, even as datasets and code evolved.</li>
+						</ul>
+					</blockquote>
+					
+					<div style="text-align: center;">
+						<h3>Folder Architecture</h3>
+						<img src="images/E-Commerce/folder_architecture.png" alt="" height="" />
+						<br>
+						<br>
+						<br>
+						<h3>Data Structure</h3>
+						<img src="images/E-Commerce/data_schema-removebg-preview.png" alt="" height="" />
+						<br>
+						<h3> Here I compiled all the ETL python files and all the queries into a single Jupyter Notebook </h3>
+						<div style="border: 1px solid black; width: 100%; height: 800px;">
+							<iframe src="projects/ecommerce/EDA.html" style="width: 100%; height: 100%; border: none;"></iframe>
+						</div>
+						<br>
+						<br>
+						<h3>To access the full project, please visit my GitHub repository</h3>
+In this repository, you will find the ETL written in Python, the SQL queries, the plots created with Matplotlib and Seaborn, the tests using Pytest, and the Airflow orchestration, which includes the DAG creation and the Docker container.
+						<br>
+						<br>
+						<a href="https://github.com/gonzalodiez/E-Commerce_Data_Pipeline/tree/main"
+							class="button small">Git Hub</a>
+					</div>
+						
+					<br>
+					<br>
+					<h6>Technologies:</h6>
+					<ul class="alt">
+						<li>Pandas</li>
+						<li>Numpy</li>
+						<li>Apache Airflow</li>
+						<li>Docker</li>
+						<li>SQL</li>
+						<li>SQLite</li>
+						<li>Matplotlib and Seaborn</li>
+						<li>pytest</li>
+						<li>DBeaver</li>
+					</ul>
+				</header>
+
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<section>
+					<h2>Get in touch</h2>
+					<form method="post" action="https://formsubmit.co/gonza.diez.d@gmail.com">
+						<div class="fields">
+							<div class="field half">
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="field half">
+								<input type="email" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="field">
+								<textarea name="message" id="message" placeholder="Message"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send" class="primary" /></li>
+						</ul>
+					</form>
+				</section>
+				<section>
+					<h2>Follow</h2>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/gonzalo-damian-diez/"
+								class="icon brands style2 fa-linkedin"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/gonzalodiez" class="icon brands style2 fa-github"><span
+									class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+				<ul class="copyright">
+					<li>&copy; Untitled. All rights reserved</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
