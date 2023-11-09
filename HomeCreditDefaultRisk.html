@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Portfolio - Data Professionals Survey</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="icon" type="image/png"
+		href="images/logo_2_zoom-removebg-preview-removebg-preview-removebg-preview.png" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<span class="symbol"><img src="images/logo.png" alt="" { transform: scale (0.5)} /></span><span
+						class="title">Gonzalo Diez</span>
+				</a>
+
+				<!-- Nav -->
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
+
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="index.html">Portfolio</a></li>
+				<li><a href="about.me.html">About me</a></li>
+				<li><a href="certificates.html">Certificates & CV</a></li>
+				<li><a href="blog.html">Blog</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<header>
+					<h1>Machine Learning Model for Home Credit Default Risk</h1>
+					Welcome to the "Home Credit Default Risk" machine learning project! In this endeavor, we tackle a vital business problem – predicting whether an applicant for a home credit loan will be able to repay their debt.
+						<br>
+						<br>	
+					<blockquote>					
+						<ul>
+							<li><b>The Business Problem:</b> This project revolves around a binary classification task: predicting if a client will face payment difficulties. We aim to assign a binary label: 1 for clients with potential payment issues (i.e., late payments on at least one of the first Y installments of the loan), and 0 for those who will manage their payments seamlessly. We'll evaluate the model's performance using the Area Under the ROC Curve (AUC-ROC), and our models will provide probabilities indicating the likelihood of a loan not being paid for each set of input data.</li>
+							<br>
+							<li><b>About the Data:</b> To accomplish this task, we'll work with the primary datasets: application_train_aai.csv and application_test_aai.csv. No need to fret about data acquisition; the necessary datasets will be automatically downloaded within the HomeCreditDefaultRisk.ipynb notebook.</li>
+							<br>
+							<li><b>Technical Aspects:</b> You'll primarily interact with the Jupyter notebook, HomeCreditDefaultRisk.ipynb, which serves as your guide throughout the project. The technologies employed are:
+								<ul style="list-style-type: none;">
+									<li><b>Python</b>for data ingestion and manipulation from CSV files</li>
+									<li><b>Pandas</b>for data ingestion and manipulation from CSV files</li>
+									<li><b>Scikit-learn</b>for feature engineering and model development</li>
+									<li><b>Matplotlib</b>and Seaborn for data visualizations</li>
+									<li><b>Jupyter Notebooks</b>for an interactive and insightful exploration of the project</li>
+								</ul>
+							</li>
+							<li><b>Installation:</b>Setting up the project is a breeze. We've provided a requirements.txt file with all the necessary Python libraries. To install these dependencies, simply execute the following command:<br>
+								<br>
+								<code>$ pip install -r requirements.txt</code><br>
+								<br>
+								(Note: We highly recommend creating a virtual environment for your project to avoid any potential conflicts with other Python packages.)
+							</li>
+							<br>
+							<li><b>Code Style:</b>Maintaining a consistent code style is crucial for code readability and efficient collaboration. In this project, we employ Black and isort for automated code formatting. You can effortlessly format your code with the following command:<br>
+								<br>
+								<code>$ isort --profile=black . && black --line-length 88 .</code><br>
+								<br>
+								(For further insights into Python code style and best practices, please refer to resources like <a href="https://docs.python-guide.org/writing/style/">The Hitchhiker’s Guide to Python: Code Style</a> and <a href="https://google.github.io/styleguide/pyguide.html">Google Python Style Guide</a>)
+							</li>
+							<br>
+							<li><b>Tests:</b>Ensuring code correctness and robustness is a paramount concern. We've included unit tests that you can execute to verify that the code meets the minimum requirements of correctness. To run these tests, simply execute:<br>
+								<br>
+								<code>$ pytest tests/</code><br>
+								<br>
+								(If you're interested in enhancing your knowledge of testing Python code, check out <a href="https://realpython.com/pytest-python-testing/">Effective Python Testing With Pytest</a> and <a href="https://docs.python-guide.org/writing/tests/">The Hitchhiker’s Guide to Python: Testing Your Code</a>.)						
+							</li>
+						</ul>
+					</blockquote>
+					
+					<div style="text-align: center;">
+						<h3>Folder Architecture</h3>
+						<img src="images/E-Commerce/folder_architecture.png" alt="" height="" />
+						<br>
+						<br>
+						<br>
+						<h3>Data Structure</h3>
+						<img src="images/E-Commerce/data_schema-removebg-preview.png" alt="" height="" />
+						<br>
+						<h3> Here I compiled all the ETL python files and all the queries into a single Jupyter Notebook </h3>
+						<div style="border: 1px solid black; width: 100%; height: 800px;">
+							<iframe src="projects/ecommerce/EDA.html" style="width: 100%; height: 100%; border: none;"></iframe>
+						</div>
+						<br>
+						<br>
+						<h3>To access the full project, please visit my GitHub repository</h3>
+In this repository, you will find the ETL written in Python, the SQL queries, the plots created with Matplotlib and Seaborn, the tests using Pytest, and the Airflow orchestration, which includes the DAG creation and the Docker container.
+						<br>
+						<br>
+						<a href="https://github.com/gonzalodiez/E-Commerce_Data_Pipeline/tree/main"
+							class="button small">Git Hub</a>
+					</div>
+						
+					<br>
+					<br>
+					<h6>Technologies:</h6>
+					<ul class="alt">
+						<li>Pandas</li>
+						<li>Numpy</li>
+						<li>Apache Airflow</li>
+						<li>Docker</li>
+						<li>SQL</li>
+						<li>SQLite</li>
+						<li>Matplotlib and Seaborn</li>
+						<li>pytest</li>
+						<li>DBeaver</li>
+					</ul>
+				</header>
+
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<section>
+					<h2>Get in touch</h2>
+					<form method="post" action="https://formsubmit.co/gonza.diez.d@gmail.com">
+						<div class="fields">
+							<div class="field half">
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="field half">
+								<input type="email" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="field">
+								<textarea name="message" id="message" placeholder="Message"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send" class="primary" /></li>
+						</ul>
+					</form>
+				</section>
+				<section>
+					<h2>Follow</h2>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/gonzalo-damian-diez/"
+								class="icon brands style2 fa-linkedin"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/gonzalodiez" class="icon brands style2 fa-github"><span
+									class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+				<ul class="copyright">
+					<li>&copy; Untitled. All rights reserved</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
